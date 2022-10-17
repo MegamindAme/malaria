@@ -1,0 +1,42 @@
+<form action="connect.php" method="post">
+ ££ connect .phph is the name of php file
+
+
+in the html code for the input we will use the names that were innitialized in the input field
+
+
+<?php
+ $firstname= $_POST['firstname'];
+$lastname= $_POST['lastname'];
+$temperature= $_POST['tepmerature'];
+$pressure= $_POST['pressure'];
+$fever= $_POST['fever'];
+$diahorea= $_POST['diahorea'];
+
+
+// databse connection
+creating database name like
+Patients_information
+id; auto increment
+firstName:varchar(50)
+lastName:varchar(50)
+temperature:varchar(50)
+pressure:varchar(50)
+
+
+$conn=new mysqli('localhost','root','','test');
+if($conn->connect_error){
+die('Connection failed :'$conn->connect_error);
+}else
+{
+$stmt=$conn->prepare("insert into patientinformation(firstName,lastName,Temperature,Pressure)
+values(? ,? ,? ,?)");
+$stmt->bind_param("ssii",$firstname,$lastname,$temperarure,$pressure);
+$stmt->execute();
+echo"registeration sucessfull...";
+$stmt->close();
+$conn->close();
+
+}
+
+?>

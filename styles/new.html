@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div></div>
+<style>
+    div{
+        height: 50px;
+        width: 50px;
+        border: white 5px groove;
+        border-radius: 100%;
+        animation: rotate ease 3s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        /*transition: transform 50s ease-in-out;*/
+        /*transform: rotate(180deg);*/
+    }
+
+    @keyframes rotate {
+        0% {
+                transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(3600deg);
+        }
+        100% {
+                transform: rotate(0deg);
+        }
+    }
+
+</style>
+</body>
+</html>

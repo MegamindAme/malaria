@@ -1,0 +1,43 @@
+#table-Body{
+
+}
+table{
+    border-collapse: collapse;
+    margin: 25px 100px;
+    font-size: .9rem;
+    max-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+table thead tr{
+    background: rgba(100,100,100,.7);
+    text-align: left;
+    font-size: 1.1rem;
+}
+table th,table td{
+    padding: 12px 15px;
+}
+table tbody tr{
+    border-bottom: 1px solid white;
+}
+table tbody tr:nth-of-type(even){
+    background: rgba(20,20,20,1);
+}
+table tbody tr:hover{
+    background: rgba(15,15,15,1);
+    transform: scale(1.01);
+    transition: transform 700ms ease-in;
+    overflow: visible;
+}
+table tbody tr:nth-of-type(even):hover{
+    background: rgba(40,40,40,1);
+}
+table tbody tr:last-of-type{
+    border-bottom: 3px white solid;
+}
+
+p{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}

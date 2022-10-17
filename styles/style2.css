@@ -1,0 +1,228 @@
+*{
+    font-family: "Montserrat";
+    color: white;
+}
+.login-submit{
+    border-radius: 5px;
+}
+.login-form{
+    margin-top: 3px;
+    min-width: 25%;
+}
+.login-form :nth-child(odd){
+    animation: login-form ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#heading{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    /*margin-top: 25%;*/
+    /*display: block;*/
+}
+
+/*Form*/
+#names, #metrics, #info, #adress {
+    display: flex;
+}
+#submit_buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+}
+
+#submit_buttons > *{
+    margin: 0 2rem;
+    padding: 0 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#submit_buttons:nth-child(1){
+    padding-bottom: 1rem;
+}
+/*#submit_buttons:nth-child(2){*/
+/*    display: block;*/
+/*    float: right;*/
+/*}*/
+
+
+/*options*/
+select{
+    background: rgba(0,0,0,0);
+    width: 75%;
+    margin: 15px 0;
+}
+option{
+    background: rgba(0,0,0,1);
+    color: white;
+}
+
+#symptoms{
+    padding: 5px;
+    padding-left: 20px;
+    background: rgba(0,0,0,.7);
+    border-radius: 7px;
+    backdrop-filter: blur(3px);
+}
+
+.symptom-options{
+    color: white;
+    padding: 3px;
+}
+
+
+/*for second page*/
+input[type='button']{
+    border: 1px white solid;
+    float: right;
+}
+.blur{
+    background: rgba(0,0,0,.7);
+    backdrop-filter: blur(3px);
+    border-radius: 2px;
+}
+header {
+    text-align: center;
+    font-size: 2rem;
+}
+main{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+#image{
+    min-width: 75%;
+}
+#image > *{
+    margin: 10px;
+}
+#image-place{
+    min-height: 720px;
+    margin: 10px;
+}
+
+img{
+    width: auto;
+    height: 720px;
+    float: right;
+}
+
+/*Form*/
+
+/*Options*/
+
+#image-body{
+    padding: 20px 10%;
+}
+
+#results{
+    min-width: 25%;
+}
+#detect-button{
+    max-width: 10rem;
+}
+#result-p{
+    margin-left:15px;
+}
+#report{
+    height: 700px;
+    width: auto;
+    margin: 42px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+hr{
+    width: 100%;
+    visibility: hidden;
+}
+#export-report{
+    /*min-width: 1rem;*/
+    max-width: 10rem;
+    float: right;
+}
+footer{
+    background: yellow;
+}
+
+/*the login page*/
+
+#login-body{
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#homepage_body{
+    align-items: center;
+    justify-content: center;
+    transition: all 3s;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#homepage_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a > input{
+    font-size: 2rem;
+    width: 25rem;
+    text-align: center;
+}
+
+#homepage_header{
+    text-align: center;
+    font-size: 4rem;
+    animation: load ease 1s;
+}
+
+a{
+    margin: 5px;
+    padding: 0;
+}
+
+/*#homepage_buttons > * :hover{*/
+/*    background: white;*/
+/*    color: black;*/
+
+
+/*Animations*/
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 1;
+        filter: blur(5px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes load {
+    0%{
+        padding-bottom: 1500px;
+    }
+    100%{
+        padding-bottom: 0;
+    }
+}
+
+@keyframes login-form {
+    0%{
+        padding-bottom: 500px;
+    }
+    100%{
+        padding-bottom: 0;
+    }
+}
